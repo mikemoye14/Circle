@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package circle;
 
 import java.awt.Color;
@@ -15,35 +14,36 @@ import java.awt.Graphics2D;
  * @author dizoo548
  */
 public class CirclePanel extends javax.swing.JPanel {
+
     private int radius;
-    
+
     /**
      * Creates new form circlePanel
      */
     public CirclePanel() {
         initComponents();
-        radius = generateRandomRadius();        
+        radius = generateRandomRadius();
     }
-    
-    private int generateRandomRadius(){
-        return 10 + (int)(Math.random()*100);
+
+    private int generateRandomRadius() {
+        return 10 + (int) (Math.random() * 100);
     }
-    
-    public int getRadius(){
+
+    public int getRadius() {
         return radius;
     }
-    
-    public void setRadius(){
-         radius = generateRandomRadius();
+
+    public void setRadius() {
+        radius = generateRandomRadius();
     }
-    
+
     @Override
-    public void paint(Graphics g) {       
-     Graphics2D circle = (Graphics2D)g;
-     circle.setColor(new Color((int)(Math.random()*255),(int)(Math.random()*255),(int)(Math.random()*255)));
-     circle.fillOval((this.getWidth() - radius)/2, (this.getHeight() - radius)/2, radius, radius);
-  }
-    
+    public void paint(Graphics g) {
+        Graphics2D circle = (Graphics2D) g;
+        circle.setColor(new Color((int) (Math.random() * 255), (int) (Math.random() * 255), (int) (Math.random() * 255)));
+        circle.fillOval((this.getWidth() - radius) / 2, (this.getHeight() - radius) / 2, radius, radius);
+    }
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -66,7 +66,6 @@ public class CirclePanel extends javax.swing.JPanel {
             .addGap(0, 300, Short.MAX_VALUE)
         );
     }// </editor-fold>//GEN-END:initComponents
-
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     // End of variables declaration//GEN-END:variables

@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package circle;
 
 import java.awt.Color;
@@ -24,15 +23,15 @@ public class Circle extends javax.swing.JFrame {
         this.setTitle("Circle");
         this.getContentPane().setBackground(Color.WHITE);
     }
-    
-    private void setCircleAttributes(){
-        int circleRadius = this.circlePanel1.getRadius();        
-        area.setText(String.valueOf((int)(Math.PI*(circleRadius*circleRadius))));
-        radius.setText(String.valueOf((int)circleRadius));
-        circumference.setText(String.valueOf((int)(2*Math.PI*circleRadius)));
-        diameter.setText(String.valueOf((int)(2*circleRadius)));
+
+    private void setCircleAttributes() {
+        int circleRadius = this.circlePanel1.getRadius();
+        area.setText(String.valueOf((int) (Math.PI * (circleRadius * circleRadius))));
+        radius.setText(String.valueOf((int) circleRadius));
+        circumference.setText(String.valueOf((int) (2 * Math.PI * circleRadius)));
+        diameter.setText(String.valueOf((int) (2 * circleRadius)));
     }
-    
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
