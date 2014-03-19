@@ -1,15 +1,18 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package circle;
 
 import java.awt.Color;
 
 /**
+ * CMPSC 221 
+ * GUI Assignments
+ * Program 25.7
+ * Circle 
+ * Circle.java 
+ * Purpose: run the circle application
  * 
  * @author Mike Moye <mtm5313@psu.edu>
+ * @version 2.0 19 March 2014
+ *
  */
 public class Circle extends javax.swing.JFrame {
 
@@ -23,7 +26,10 @@ public class Circle extends javax.swing.JFrame {
         this.setTitle("Circle");
         this.getContentPane().setBackground(Color.WHITE);
     }
-
+    
+    /**
+     * Method setCircleAttributes() sets the attribute labels of the circle
+     */
     private void setCircleAttributes() {
         int circleRadius = this.circlePanel1.getRadius();
         area.setText(String.valueOf((int) (Math.PI * (circleRadius * circleRadius))));
@@ -145,7 +151,11 @@ public class Circle extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+    
+    /**
+     * Method jButton1MousePressed creates a new random circle
+     * @param evt click button
+     */
     private void jButton1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MousePressed
         circlePanel1.setRadius();
         this.setCircleAttributes();

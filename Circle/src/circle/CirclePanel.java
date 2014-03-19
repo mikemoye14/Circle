@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package circle;
 
 import java.awt.Color;
@@ -10,8 +5,16 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 
 /**
+ * CMPSC 221 
+ * GUI Assignments
+ * Program 25.7
+ * Circle 
+ * CirclePanel.java 
+ * Purpose: creates the circle panel
  * 
  * @author Mike Moye <mtm5313@psu.edu>
+ * @version 2.0 19 March 2014
+ *
  */
 public class CirclePanel extends javax.swing.JPanel {
 
@@ -24,19 +27,33 @@ public class CirclePanel extends javax.swing.JPanel {
         initComponents();
         radius = generateRandomRadius();
     }
-
+    
+    /**
+     * Method generateRandomRadius() generate a random number between 10 and 100
+     * @return 10 + (int) (Math.random() * 100) a random number between 10 and 100
+     */
     private int generateRandomRadius() {
         return 10 + (int) (Math.random() * 100);
     }
-
+    
+    /**
+     * Method getRadius() gets the radius of the circle
+     * @return radius the radius of the circle
+     */
     public int getRadius() {
         return radius;
     }
-
+    /**
+     * Method setRadius() sets the radius of the circle
+     */
     public void setRadius() {
         radius = generateRandomRadius();
     }
-
+    
+    /**
+     * Method paint(Graphics g) draws the circle
+     * @param g abstract graphic
+     */
     @Override
     public void paint(Graphics g) {
         Graphics2D circle = (Graphics2D) g;
