@@ -8,8 +8,8 @@ package circle;
 import java.awt.Color;
 
 /**
- *
- * @author dizoo548
+ * 
+ * @author Mike Moye <mtm5313@psu.edu>
  */
 public class Circle extends javax.swing.JFrame {
 

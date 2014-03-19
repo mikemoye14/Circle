@@ -10,8 +10,8 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 
 /**
- *
- * @author dizoo548
+ * 
+ * @author Mike Moye <mtm5313@psu.edu>
  */
 public class CirclePanel extends javax.swing.JPanel {
 
