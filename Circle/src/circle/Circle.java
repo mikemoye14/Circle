@@ -147,11 +147,8 @@ public class Circle extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MousePressed
-        this.circlePanel1 = new CirclePanel();
-        this.circlePanel1.setRadius();
-        setCircleAttributes();
-        circlePanel1.repaint();
-        circlePanel1.revalidate();
+        circlePanel1.setRadius();
+        this.setCircleAttributes();
         this.repaint();
         this.revalidate();
     }//GEN-LAST:event_jButton1MousePressed
